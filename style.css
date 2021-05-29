@@ -218,10 +218,11 @@ img[src="pic/logo-all-dark.svg"] {
 
 
 
-/* style */
+/* style and link */
 ul[class~="box"] li a {
   display: block;
   text-decoration: none;
+  color: #3F5D45;
 }
 
 .box-nav li a {
