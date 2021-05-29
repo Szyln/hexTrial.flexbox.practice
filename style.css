@@ -1,0 +1,390 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block; 
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ 
+/* START FROM HERE *//* START FROM HERE *//* START FROM HERE *//* START FROM HERE *//* START FROM HERE */
+
+
+
+/* 整體設定 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  /* primary setting */
+  font-family: PingFang TC;
+  color: #3F5D45; 
+  font-size: 24px;
+  font-weight: 600; 
+
+  width: 940px;
+  margin: 0 auto;
+ 
+  list-style: none;
+  text-align: center;
+}
+/* 圖像設定 */
+img[src="pic/logo-all-dark.svg"] {
+  height: 40px; 
+}
+
+
+/* text-setting 1:color */
+.text-secondary { color: #EAF0ED; }
+
+/* text-setting 2:weight and size */
+.text-weight-light { font-weight: 300; }
+.text-medium { font-size: 20px; }
+.text-small { font-size: 16px; }
+
+
+
+
+/* flex-setting: container, item */
+.flex-container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container-nav-detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flex-container-main-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+  
+
+
+/* 勿忘h3 */
+.flex-container-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+}
+
+/* 勿忘item(product-list)  要 mb15  */
+.flex-container-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+
+
+  /* 勿忘item(card)要 mb20 */
+  .flex-container-product-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+    .flex-container-card {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+
+      
+
+      .flex-container-card ul {
+        display: flex;
+      }
+
+
+
+      .card ul li:first-child { 
+        flex: 173px;
+      }
+    
+      .card ul li:last-child { 
+        flex: 127px; 
+      }
+
+
+
+  .flex-container-product-page {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+    .flex-container-product-page li { flex:1; }
+
+
+
+
+
+/* size-setting */
+.flex-container-nav > ul {
+  width: 349px;
+}
+.flex-container-nav-detail {
+  width: 276px;
+  height: 100px;
+}
+
+.flex-container-category {
+  width: 300px;
+}
+
+.card {
+  position: relative;
+  /* height: 436px; */
+}
+  
+  .card > li:first-child {
+    position: absolute;
+    writing-mode: vertical-rl;
+    letter-spacing: 2px;
+    top: 0;
+    left: 20px;
+  }
+  
+  .card > li:nth-child(2) {
+    position: absolute;
+    top: 19px;
+    right: 22px;
+  }
+
+.page { 
+  width: 300px;
+ }
+
+  .page li {
+    flex:1;
+  }
+
+/* margin */
+.flex-container-main > div { margin-bottom: 60px; }
+.flex-container-category { margin-right: 20px;}
+.flex-container-product-list { margin-bottom: 10px; }
+.card { margin-bottom: 20px; }
+
+
+/* style-setting 2:item */
+
+
+
+
+
+
+/* container: style and flex */
+/* item: style and flex */
+
+/* style */
+ul[class~="box"] li a {
+  display: block;
+  text-decoration: none;
+}
+
+.box-nav li a {
+  padding: 40px 30px 38px 30px;
+}
+
+  .box-nav li a:hover {
+    background-color: #EAF0ED;
+  }
+
+  .box-nav li a:active {
+    background-color: #b9c0bc;
+    color: #1e3328;
+  }
+
+  .box-nav li a:visited {
+    color: #3F5D45;
+  }
+
+
+.box-category {
+  border: 1px solid #EAF0ED;
+}
+
+  .box-category li:first-child {
+    background-color: #3F5D45;
+    padding: 16px 0;
+    color:#EAF0ED
+  }
+
+
+  .box-category li:not(:last-child) {
+    border-bottom: 1px solid #EAF0ED;
+  }
+
+.box-category li a {
+  padding: 16px 0;
+}
+
+  .box-category li a:hover {
+    background-color: #EAF0ED;
+  }
+
+  .box-category li a:active {
+    background-color: #b9c0bc;
+    color: #1e3328;
+  }
+
+  .box-category li a:visited {
+    color: #3F5D45;
+  }
+
+.card li:last-child a {
+  padding: 16px;
+  background-color: #EAF0ED;
+}
+
+  .card li:last-child a:hover {
+    background-color: #FFE180;
+  }
+
+  .card li:last-child a:active {
+    background-color: #e6c55a;
+    color: #1e3328;
+  }
+
+  .card li:last-child a:visited {
+    color: #3F5D45;
+  }
+
+.page {
+  border: solid #EAF0ED;
+  border-width: 0px 1px;
+}
+
+    .page li {
+      border: solid #EAF0ED;
+      border-width: 1px 0;
+    }
+
+    .page li:not(:last-child) {
+      border-right: 1px solid #EAF0ED;
+    }
+
+  .page li a {
+    padding: 16px 0;  
+  }
+
+  .page li a:hover {
+    background-color: #EAF0ED;
+  }
+
+  .page li a:active {
+    background-color: #b9c0bc;
+    color: #1e3328;
+  }
+
+  .page li a:visited {
+    color: #3F5D45;
+  }
+
+  
+
+/* just text */
+.card > li:first-child {
+  background-color: #3F5D45;
+  padding: 10px;
+}
+
+.card > ul  {
+  border: solid #EAF0ED;
+  border-width: 0 1px 0 1px;
+}
+.card > ul li {
+  padding: 14px 0;
+}
+
+.card > ul li:first-child {
+  border-right: 1px solid #EAF0ED;
+}
+
+
+
+
+/* current page */
+.box-category li:nth-child(2) {
+  pointer-events: none;
+  background-color: #EAF0ED;
+}
+
+.page li:first-child {
+  pointer-events: none;
+  border-right: none;
+}
+
+
+
+
+.page li:nth-child(2) {
+  pointer-events: none;
+  background-color: #3F5D45;
+  border: none;
+}
+
+
+.page li:nth-child(2) a {
+  color: #EAF0ED;
+}
+
+
+
+
